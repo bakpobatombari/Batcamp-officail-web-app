@@ -1,0 +1,55 @@
+.homepic{
+    height: 530px;
+    padding-top: 10px;
+    /* background: radial-gradient(rgb(32, 71, 0),rgb(206, 249, 255)); */
+    background-image: url("../images/website.jpeg");
+    background-size: cover;
+}
+.half-pic{
+    height:510px;
+    border-radius: 15%;
+    background-color: rgba(207, 255, 239, 0.534);
+    padding-top: 15px;
+    animation:alternate-reverse 2 3s anime;
+}
+.half-pic-2{
+
+    border-radius: 15%;
+    height:490px;
+    background-color: rgba(0, 199, 166, 0.164);
+    animation:  alternate-reverse 2 3s animate;
+}
+#h2-anime{
+    animation: 1 3s hanim;
+    position: absolute;
+    right: 250px;
+}
+.signup{
+    height: 60px;
+    border-radius: 7px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+.signup:hover{
+    transition: 0.5s;
+    background-color: rgb(0, 117, 117);
+    font-weight: 600;
+    border: none;
+}
+.about-pic{
+    height:250px;
+    border-radius: 5px;
+    background-color: aquamarine;
+}
+@keyframes animate{
+    from{border-radius: 0%;}
+    to{border-radius: 15%;}
+}
+@keyframes anime{
+    from{border-radius: 0%;}
+    to{border-radius: 15%;}
+}@keyframes hanim{
+    from{left:0}
+    to{left:720px}
+}

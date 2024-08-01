@@ -1,0 +1,25 @@
+#webnav{
+    height: 60px;
+    background: linear-gradient(80deg,rgb(61, 151, 61, 0.473),rgba(39, 158, 255));
+    font-family: serif;
+    z-index: 100;
+}
+.logo{
+    display: flex;
+    color: rgb(241, 241, 241);
+}
+.nav-items{
+    display: flex;
+}
+.nav-link a{
+    color: white;
+    text-decoration: none;
+}
+#mobilenav{
+    height: 60px;
+    background: linear-gradient(80deg,rgb(61, 151, 61, 0.473),rgba(39, 158, 255));
+    font-family: serif;
+}
+#mobilenav{
+    display: none;
+}

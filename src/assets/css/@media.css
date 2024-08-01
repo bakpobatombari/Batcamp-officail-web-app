@@ -1,0 +1,32 @@
+
+@media only screen and (min-width:320px) and (max-width:620px) {
+    #webnav{
+        display: none !important;
+    }
+    #mobilenav{
+        display: block !important;
+        overflow: hidden;
+    }
+    .homepic{
+        width: 100%;
+        height:300px;
+    }
+    .half-pic{
+    display: none;   
+    }
+    .half-pic-2{
+        display: none;   
+    }
+    #h2-anime{
+        display: none;   
+    }
+        
+}
+@media screen and (min-width:1320px) and (max-width:1360px) {
+    #webnav{
+        display: block;
+    }
+    #mobilenav{
+        display: none !important;
+    }
+}
