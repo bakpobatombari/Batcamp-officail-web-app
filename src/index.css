@@ -132,7 +132,7 @@
 }
 .login-container{
   height: 80vh;
-  border: 5px;
+  border-radius: 10px;
   width: 90%;
   margin: 6rem auto;
   background: linear-gradient(rgba(3, 168, 132, 0.295),rgba(105, 179, 154, 0.384));
@@ -144,5 +144,5 @@
   position: absolute;
   top:0;
   padding-top: 0.6rem;
-  background-color: rgba(216, 216, 216, 0.116);
+  background-color: rgba(4, 255, 180, 0.541);
 }

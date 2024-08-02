@@ -1,0 +1,40 @@
+.login-container h1{
+    text-align: center;
+    font-family: serif;
+    background: linear-gradient(rgb(137, 255, 186), rgb(0, 114, 28));
+    background-clip: text;
+    color: transparent;
+}
+
+input{
+    display: block;
+    margin-left: 23rem;
+    font-family: serif;
+    height:45px;
+    border-radius: 5px;
+    border:1px solid white;
+    background: transparent;
+    color:white;
+}
+input:focus{
+    border: 1px sold white !important;
+}
+input[name="name"]{
+    margin-bottom: 1rem;
+}
+input[type="password"]{
+    margin-bottom: 1rem;
+}
+label{
+    margin-left: 23rem;
+    font-family: serif;
+}
+.login-container button{
+    height:40px;
+    background-color: rgb(95, 233, 180);
+    border-radius: 5px;
+    color:white;
+    border: 1px solid white;
+    font-family:serif;
+    font-weight: 500;
+}
