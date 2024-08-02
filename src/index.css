@@ -6,6 +6,23 @@
   z-index: 1;
   top:0;
 }
+@media only screen  and (min-width:320px) and (max-width:720px){
+  *{
+    overflow-x: hidden;
+  }
+  .navbar{
+    width: 100% !important;
+    overflow-x: hidden;
+    padding-left: -2px !important;
+  }
+  .links{
+    display: none !important;
+  }
+  .homepic{
+    height:300px !important;
+    width: 100% !important;
+  }
+}
 .pic-logo{
   height:100px;
   margin-top: -1rem;
