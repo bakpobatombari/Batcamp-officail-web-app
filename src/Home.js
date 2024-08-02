@@ -3,12 +3,32 @@ import homepic from './assets/images/website.jpeg';
 import './assets/css/bootstrap.min.css';
 import aboutpic from './assets/images/programmer.jpeg'
 import cycle from './assets/images/cirlclecy.png'
+import 'react-slideshow-image/dist/styles.css'
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css';
+
 const Home = () => {
+    const images = [
+        "https://media.istockphoto.com/id/1489415049/photo/two-diverse-software-developers-having-a-meeting-in-a-conference-room-female-and-male-tech.webp?b=1&s=170667a&w=0&k=20&c=HIYlSIoHTy1diSvekZnL90pFiiq_2IPKah9MKv849A4=",
+        "https://media.istockphoto.com/id/1431603444/photo/software-developer-at-the-office.webp?b=1&s=170667a&w=0&k=20&c=lC7GzT24P-4TXM5Bp9RmwV3Xzp5sxM8nls5RC6ptGTQ=",
+        "https://media.istockphoto.com/id/1450788989/photo/portrait-of-happy-african-businesswoman-holding-digital-tablet-in-the-office.webp?b=1&s=170667a&w=0&k=20&c=zkLn4o1T0CMCXmTQZlwheJDYuW9fOXXkvTJ9zbl3sCs=",
+    ];
     return (  
         <>
-        <div className="homepic">
-            <img src={homepic} className='col-md-12' alt="homepic" />
-        </div>
+        <Slide>
+            <div className="each-slide-effect">
+                <div style={{ 'backgroundImage': `url(${images[0]})` }}>
+                </div>
+            </div>
+            <div className="each-slide-effect">
+                <div style={{ 'backgroundImage': `url(${images[1]})` }}>
+                </div>
+            </div>
+            <div className="each-slide-effect">
+                <div style={{ 'backgroundImage': `url(${images[2]})` }}>
+                </div>
+            </div>
+        </Slide>
         <div className="container about">
             <center>
             <h2>Welcome To Batcamp</h2>
