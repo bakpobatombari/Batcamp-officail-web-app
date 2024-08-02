@@ -8,11 +8,10 @@
 }
 @media only screen  and (min-width:320px) and (max-width:720px){
   *{
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
   .navbar{
     width: 100% !important;
-    overflow-x: hidden;
     padding-left: -2px !important;
   }
   .links{
