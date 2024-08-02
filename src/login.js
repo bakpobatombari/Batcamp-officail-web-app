@@ -1,30 +1,47 @@
-import './assets/css/bootstrap.min.css';
-import './login.css'
-
-const Login = () => {
-    return ( 
-        <>
-        <div className="body">
-          <div className="login-container">
-            <form action="./">
-            <center>
-            <h1>Login</h1>
-            <div className="hr-line col-md-2"></div>
-            </center>
-            <label htmlFor="name">
-              Username:
+import React, { Component } from 'react'
+import './assets/css/bootstrap.min.css'
+export default class Login extends Component {
+  render() {
+    return (
+      <form>
+        <h3>Sign In</h3>
+        <div className="mb-3">
+          <label>Email address</label>
+          <input
+            type="email"
+            className="form-control"
+            placeholder="Enter email"
+          />
+        </div>
+        <div className="mb-3">
+          <label>Password</label>
+          <input
+            type="password"
+            className="form-control"
+            placeholder="Enter password"
+          />
+        </div>
+        <div className="mb-3">
+          <div className="custom-control custom-checkbox">
+            <input
+              type="checkbox"
+              className="custom-control-input"
+              id="customCheck1"
+            />
+            <label className="custom-control-label" htmlFor="customCheck1">
+              Remember me
             </label>
-            <input type="text" name='name' placeholder='Username' className='col-md-5 username' required/>
-            <label htmlFor="password">
-              Password:
-            </label>
-            <input type="password" name='password' placeholder='Password' className='col-md-5' required/>
-            <center><button className="col-md-2">submit</button></center>
-            </form>
           </div>
-          </div>
-        </>
-     );
+        </div>
+        <div className="d-grid">
+          <button type="submit" className="btn btn-primary">
+            Submit
+          </button>
+        </div>
+        <p className="forgot-password text-right">
+          Forgot <a href="#">password?</a>
+        </p>
+      </form>
+    )
+  }
 }
- 
-export default Login;

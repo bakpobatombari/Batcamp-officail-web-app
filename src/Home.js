@@ -6,6 +6,7 @@ import cycle from './assets/images/alexandru-acea--WBYxmW4yuw-unsplash.jpg'
 import 'react-slideshow-image/dist/styles.css'
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
+import portif from './assets/images/about-prog.jpeg'
 
 const Home = () => {
     const images = [
@@ -72,6 +73,32 @@ const Home = () => {
             </div>
         </div>
         </div>
+        </div>
+        <div className="portifolio container mb-4">
+            <div className="row">
+            <div className="col-md-6">
+                <img src={portif} style={{
+                    borderRadius:"50%",
+                    height:"340px",
+                    border:"1px solid white"
+                    }} className="col-md-9" alt="Portifolio" />
+            </div>
+            <div className="col-md-6">
+                <center>
+                    <h2 style={{
+                        fontFamily:"serif"
+                        }}>About Me</h2>
+                        <div className="hr-line col-md-2"></div>
+                </center>
+                <p style={
+                    {
+                        marginTop: "20px",
+                        fontSize: "24px",
+                        fontFamily: "serif"
+                    }
+                }>My Name Is Batombari Bakpo, I am 12 Years Old And I Am The Ceo & Founder Of Batcamp Global Services, I Started The Company In Order To Stop The Challenges in Learning And Creating Websites And Grapahics Designs</p>
+            </div>
+            </div>
         </div>
         </>
     );

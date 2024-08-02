@@ -97,7 +97,7 @@
   text-align: center;
 }
 .offers{
-  background: lightseagreen;
+  background: url("./assets/images/alexandru-acea--WBYxmW4yuw-unsplash.jpg");
   margin-bottom: 2rem;
   border-radius: 5px;
   height: 26rem;
@@ -114,7 +114,9 @@
 }
 .offers h2{
   font-family: serif;
-  color: white;
+  background: linear-gradient(to right,blue, rgb(189, 141, 11));
+  background-clip: text;
+  color: transparent
 }
 .offer-deals ul{
   list-style: disc;
@@ -123,22 +125,28 @@
 .offer-deals li{
   font-family: serif;
   font-size: 2rem;
+  background: linear-gradient(to right,blue, rgb(189, 141, 11));
+  background-clip: text;
+  color: transparent
 }
 .footer{
-  bottom:0 !important;
-
-  background: linear-gradient(to right,skyblue,rgb(0, 172, 157));;
+  height: 220px;
+  padding-top: 1rem;
+  background:  linear-gradient(rgba(3, 168, 132, 0.295),rgba(105, 179, 154, 0.384));
 }
 .footer h2{
   text-align: center;
   font-family: serif;
+  background: linear-gradient(to right,blue, rgb(189, 141, 11));
+  background-clip: text;
+  color: transparent
 }
 .login-container{
   height: 80vh;
   border-radius: 10px;
   width: 90%;
   margin: 6rem auto;
-  background: linear-gradient(rgba(3, 168, 132, 0.295),rgba(105, 179, 154, 0.384));
+  background: linear-gradient(rgba(89, 216, 255, 0.295),rgba(41, 241, 255, 0.384));
   box-shadow: rgb(255, 255, 255) -1px 1px 2px 2px;
 }
 .body{
@@ -162,4 +170,16 @@
   font-size: 20px;
   background: #efefef;
   text-align: center;
+}
+.footer form input{
+  height:40px;
+  border: none;
+  border-radius: 5px;
+}
+.footer form button{
+  height:40px;
+  color:white;
+  background-color: lightseagreen;
+  border: none;
+  border-radius: 5px;
 }
