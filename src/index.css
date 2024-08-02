@@ -41,8 +41,9 @@
 }
 .links{
   position: absolute;
-  right: 5rem;
+  right: 2rem;
   display: flex;
+  font-family: serif;
 }
 .links button{
   text-decoration: none;
@@ -61,7 +62,7 @@
   margin-top: 0.5rem;
   text-decoration: none;
   color: white;
-  font-family: sans-serif;
+  font-family: serif;
   margin-right: 2rem;
 }
 .homepic{
