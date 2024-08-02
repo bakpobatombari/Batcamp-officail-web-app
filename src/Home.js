@@ -1,8 +1,8 @@
 
 import homepic from './assets/images/website.jpeg';
 import './assets/css/bootstrap.min.css';
-import aboutpic from './assets/images/programmer.jpeg'
-import cycle from './assets/images/cirlclecy.png'
+import aboutpic from './assets/images/pic.jpg'
+import cycle from './assets/images/alexandru-acea--WBYxmW4yuw-unsplash.jpg'
 import 'react-slideshow-image/dist/styles.css'
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
@@ -36,7 +36,7 @@ const Home = () => {
             </center>
             <div className="row">
                 <div className="about-pic col-md-6">
-                    <img src={aboutpic} className='col-md-12' alt="" />
+                    <img src={aboutpic} className='col-md-12 about-picture' alt="" />
                 </div>
                 <div className="about-writeup col-md-6">
                     <center>

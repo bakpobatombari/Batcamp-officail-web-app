@@ -77,6 +77,10 @@
 .about{
   margin-bottom: 4rem !important;
 }
+.about-picture{
+  height:370px;
+  border-radius: 8px;
+}
 .about h2{
   text-align: center;
   font-family: serif;
@@ -93,19 +97,17 @@
   text-align: center;
 }
 .offers{
-  background: linear-gradient(to left,skyblue,rgb(0, 172, 157));
+  background: lightseagreen;
   margin-bottom: 2rem;
-  height: 30rem;
+  border-radius: 5px;
+  height: 26rem;
 }
 .cycle{
-  height:25rem;
-  border-radius: 50%;
+  height:20rem;
+  border-radius: 10px;
   animation: cycle 5s infinite linear;
 }
-@keyframes cycle{
-  from{transform: rotate(0deg);}
-  to{transform: rotate(360deg);}
-}
+
 .offer-deals{
   padding-top: 2rem;
   padding-left: 3rem !important;
