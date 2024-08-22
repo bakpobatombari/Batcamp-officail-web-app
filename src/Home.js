@@ -64,11 +64,11 @@ const Home = () => {
             </div>
             <div className="offer-deals col-md-6">
                 <ul>
-                    <li>Web Development Course</li>
-                    <li>Graphics Design Course</li>
-                    <li>UI/UX Design Course</li>
+                    <li>Web Development Courses</li>
+                    <li>Graphics Design Courses</li>
+                    <li>UI/UX Design Courses</li>
                     <li>Digital Marketing</li>
-                    <li>Web Hosting Course</li>
+                    <li>Web Hosting Courses</li>
                 </ul>
             </div>
         </div>
