@@ -8,7 +8,7 @@
   background: transparent;
   color:white;
   z-index: 1;
-  top:0;
+  top:0 !important;
 }
 @media only screen  and (min-width:320px) and (max-width:720px){
   *{
@@ -186,4 +186,7 @@
   background-color: lightseagreen;
   border: none;
   border-radius: 5px;
+}
+.card{
+  height: 400px;
 }
