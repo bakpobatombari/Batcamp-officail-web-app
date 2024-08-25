@@ -46,7 +46,7 @@ const Home = () => {
                     </center>
 
                     <p>
-                        Batcamp Global Services Is A Web Designing and Graphics Design Company Established on 23rd Setember 2023 By Batombari Bakpo With
+                        Batcamp Global Services Is A Web Designing and Graphics Design Company Established on 25th August 2023 By Batombari Bakpo With
                         The Aim Of Creating Interactive Websites And Graphics For Your Schools, Offices, Buisnesses, and Organisations.
                     </p>
                 </div>

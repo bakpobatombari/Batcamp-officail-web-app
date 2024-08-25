@@ -48,12 +48,12 @@ const Footer = () => {
                color: "white"
             }
             }>About</Link></p>
-            <p><Link to="/contact"style={{
+            <p><Link to="/courses"style={{
                fontFamily: "serif",
                textDecoration: "none",
                color: "white"
             }
-            }>Contact</Link></p>
+            }>Courses</Link></p>
            </div>
            </div>
            </div>

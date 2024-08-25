@@ -5,8 +5,8 @@ import Navbar from './nav';
 import About from './about';
 import Login from './login';
 import Footer from './footer';
-import Contact from './contact';
-
+import Courses from './courses';
+import NotFound from './404';
 function App() {
   return (
     <Router>
@@ -20,11 +20,11 @@ function App() {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/contact">
-          <Contact />
+          <Route path="/courses">
+          <Courses />
           </Route>
-          <Route>
-            <Login />
+          <Route path="*">
+          <NotFound />
           </Route>
         </Switch>
         </div>  
