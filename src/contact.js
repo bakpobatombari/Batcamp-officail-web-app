@@ -46,7 +46,7 @@ const Contact = () => {
         setIsPending(true);
         const data = {firstName,LastName,email,message}
         setTimeout(()=>{
-            fetch('http://localhost:8800/info', {
+            fetch('https://bakpobatombari.github.io/batcampdb/db.json', {
                 method: 'POST',
                 headers: {"Content-Type": "application/json"},
                 body: JSON.stringify(data)

@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 const Dblist = ({info, firstname}) => {
     return ( 
         <div className="blog-list mb-4">
-            <h1 className='text-center'>Database</h1>
+            <h1 className='text-center'>DB</h1>
             <h2>{firstname}</h2>
         {info.map((data) => (
             <div className="blog-preview" key={info.id}>

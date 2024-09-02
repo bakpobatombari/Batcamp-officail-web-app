@@ -4,10 +4,10 @@ import { useHistory } from "react-router-dom";
 
 const Detail = () => {
     const { id } = useParams();
-    const {data:info,error,isPending} = useFetch('http://localhost:8800/info/' + id);
+    const {data:info,error,isPending} = useFetch('https://bakpobatombari.github.io/batcampdb/db.json' + id);
     const history = useHistory();
     const handleDelete = () =>{
-        fetch('http://localhost:8800/info/' + info.id, {
+        fetch('https://bakpobatombari.github.io/batcampdb/db.json' + info.id, {
             method: 'DELETE',
         }).then(() => {
             history.push('/database');
