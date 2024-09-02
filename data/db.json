@@ -1,14 +1,18 @@
 {
-    "info":
-  [
+  "info": [
     {
-        "name": "batombari",
-        "password": "bat123"
+      "id": "bf26",
+      "firstName": "Batombari",
+      "LastName": "Bakpo",
+      "email": "batombari12@gmail.com",
+      "message": "I want to enroll in your Courses"
     },
     {
-        "name": 1234,
-        "password": 1234
+      "id": "011c",
+      "firstName": "Batombari",
+      "LastName": "Bakpo",
+      "email": "batombari12@gmail.com",
+      "message": "I Need A Website For My Buisness And I also Want to Enroll in some of your courses"
     }
-
   ]
 }

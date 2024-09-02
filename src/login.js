@@ -1,22 +1,43 @@
-import React, { Component } from 'react'
-import './assets/css/bootstrap.min.css'
-export default class Login extends Component {
-  render() {
+// import React, { Component  ) 
+import './assets/css/bootstrap.min.css';
+import { useState } from 'react';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+
+const Login = () => {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const data = [email,password];
+    
+    const hanleForm = (e) =>{
+      e.preventDefault();
+      fetch('http://localhost:8800/info', {
+        method: 'POST',
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(data)
+    }).then(()=>{
+        console.log("New blog Added");
+    })
+    }
     return (
-      <form>
-        <h3>Sign In</h3>
+      <form className='container mb-4 login' onSubmit={hanleForm} style={{marginTop:'8rem'}}>
+        <h3 className='text-center'>Sign In</h3>
         <div className="mb-3">
           <label>Email address</label>
           <input
             type="email"
             className="form-control"
+            value={email}
+            onChange={(e) =>setEmail(e.target.value)}
             placeholder="Enter email"
           />
+
         </div>
         <div className="mb-3">
           <label>Password</label>
           <input
             type="password"
+            value={password}
+            onChange={(e) =>setPassword(e.target.value)}
             className="form-control"
             placeholder="Enter password"
           />
@@ -39,9 +60,11 @@ export default class Login extends Component {
           </button>
         </div>
         <p className="forgot-password text-right">
-          Forgot <a href="#">password?</a>
+          Forgot <Link to="#">password?</Link>
         </p>
       </form>
     )
   }
-}
+  
+export default Login;
+

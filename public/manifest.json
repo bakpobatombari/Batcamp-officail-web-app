@@ -4,7 +4,7 @@
   "icons": [
     
     {
-      "src": "batcamp.svg",
+      "src": "/favicon.ico",
       "type": "image/png",
       "sizes": "192x192"
     }

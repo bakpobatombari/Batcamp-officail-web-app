@@ -5,7 +5,8 @@
 }
 .navbar{
   height:70px;
-  background: transparent;
+  background: #4ac99a63;
+  overflow: hidden;
   color:white;
   z-index: 1;
   top:0 !important;
@@ -14,9 +15,15 @@
   *{
     overflow-x: hidden !important;
   }
+  .offers{
+    display: none;
+  }
   .navbar{
     width: 100% !important;
     padding-left: -2px !important;
+  }
+  .footer{
+    overflow: hidden;
   }
   .links{
     display: none !important;
@@ -33,6 +40,32 @@
 .logo{
   display: flex;
   margin-top: 0.5rem;
+}
+.d-b{
+  display: block !important;
+}
+.none{
+  display: none !important;
+}
+a::after{
+  color:black;
+}
+.db form{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.db button,input{
+  height:30px;
+}
+.db button{
+  background: rgb(0, 102, 255);
+  border: 0;
+  color:white;
+  border-radius: 5px;
+}
+.db input{
+  margin-bottom: -1rem !important;
 }
 .logo h1{
   background: linear-gradient(to right,rgb(190, 255, 205),rgb(222, 255, 222));
@@ -106,16 +139,38 @@
   border-radius: 5px;
   height: 26rem;
 }
+.n-w{
+  width: 0;
+}
+.sidenav{
+  height: 100vh;
+  position: fixed;
+  overflow: hidden;
+  background: rgba(68, 134, 94, 0.534);
+  z-index: 10;
+  width: 50%;
+  position: fixed;
+  top:0;
+  transition: 1s;
+  right: 0;
+}
+.width{
+  width: 50%;
+  display: block;
+}
+.show{
+  width: 52%;
+  display: block;
+}
+.hide{
+  width: 0;
+}
 .cycle{
   height:20rem;
   border-radius: 10px;
   animation: cycle 5s infinite linear;
 }
 
-.offer-deals{
-  padding-top: 2rem;
-  padding-left: 3rem !important;
-}
 .offers h2{
   font-family: serif;
   background: linear-gradient(to right,blue, rgb(189, 141, 11));
@@ -134,7 +189,7 @@
   color: transparent
 }
 .footer{
-  height: 220px;
+  height: 260px;
   padding-top: 1rem;
   background:  linear-gradient(rgba(3, 168, 132, 0.295),rgba(105, 179, 154, 0.384));
 }
@@ -187,6 +242,10 @@
   border: none;
   border-radius: 5px;
 }
+.login{
+  color: white;
+  background: rgba(89, 168, 151, 0.562);
+}
 .card{
   border-radius: 5px;
 }
@@ -196,4 +255,124 @@
 }
 .card img{
   height: 200px;
+}
+
+.sidenav .s-link{
+  margin: 3rem;
+}
+.sidenav a{
+  display: block;
+  text-decoration: none;
+  color:white;
+  font-size: 2rem;
+}
+.sidenav span{
+  font-size: 2rem;
+  color: white;
+  margin: 1rem;
+}
+.contact{
+  height: 100vh;
+  background: #a8dbbbd3;
+  margin: 4.5rem;
+  color: white;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+.contact input, textarea{
+  display: block;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  border: none;
+}
+.contact button{
+  margin-top: 1rem !important;
+}
+.openNav{
+  display: none;
+}
+.sidenav{
+  display: none;
+}
+.about-me{
+  height:fit-content;
+  background: #5c9e8e93;
+  color: white;
+}
+.database-container{
+  height: 80vh;
+  width: 80%;
+  margin-bottom: 5rem;
+  margin: 9rem;
+  margin-top: 5rem;
+  background: #469dff2a;
+  z-index: 100;
+}
+@media screen and (min-width:320px) and (max-width:720px){
+ .openNav{
+  display: block;
+  font-size: 30px;
+ }
+ .sidenav{
+  display: none;
+ }
+ .db-btn{
+  display: block !important;
+ }
+}
+.blog-details button{
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.home{
+  margin: 2rem;
+  margin-top: 5rem;
+}
+.blog-preview{
+  padding: 5px 5px;
+  margin: 20px 0;
+  width: 70%;
+  border-radius: 5px;
+  height: fit-content;
+  border: 1px solid rgb(175, 175, 175);
+  border-bottom: 1px solid #c4c4c4;
+}
+.blog-preview h2{
+  font-size: 18px;
+}
+.blog-preview:hover{
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+.blog-preview a{
+  text-decoration: none;
+  color: black;
+}
+.blog-details{
+  margin: 4rem;
+  margin-top: 5rem;
+  height: 7rem;
+}
+.blog-details h2{
+  font-size: 20px;
+  color: #008fd1;
+  margin-bottom: 10px;
+}
+.blog-details div{
+  margin: 20px 0;
+}
+.circle-p{
+  animation: circle 1 5s;
+}
+@keyframes circle{
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(0);
+  }
 }

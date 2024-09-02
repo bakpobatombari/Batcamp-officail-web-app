@@ -1,6 +1,23 @@
+import { useState} from 'react';
+import { useHistory } from 'react-router-dom';
 import './assets/css/bootstrap.min.css'
 import {Link} from 'react-router-dom'
 const Footer = () => {
+   const history = useHistory();
+   const [isPending, setIsPending] = useState(false);
+   const [subscribed, setSubscribed] = useState(false);
+   const [email, setEmail] = useState('');
+   const handleFooter = (e) => {
+      let btn = document.getElementById('subber');
+      e.preventDefault();
+      setIsPending(true);
+      setTimeout(()=>{
+          history.push('/')
+          setIsPending(false);
+          setSubscribed(true)
+          btn.style.display ='none';
+      },1000)
+   };
     return ( 
         <>
         <footer className="footer container-fluid">
@@ -11,15 +28,19 @@ const Footer = () => {
             </center>
            <div className="row">
            <div className="col-md-3">
-            <form action="">
-               <p style={
+            <form onSubmit={handleFooter}>
+               {!subscribed &&<p style={
                   {
                   fontFamily: 'serif'
                   }
-                  }>Enter Email for more info</p>
+                  }>Enter Email for more info</p>}
+                  {subscribed && <p>{email} has successfully subscibed To Batcamp</p>}
                <div className="row">
-               <input type="email" className='col-md-8' name="Email" placeholder='Enter email' id="Email" />
-               <button className='col-md-4'>Submit</button>
+               {!isPending && !subscribed &&<input type="email" className='col-md-8' name="Email" onChange={(e) => setEmail(e.target.value)} id='email' placeholder='Enter email'/>}
+               {!isPending && subscribed &&<input type="email" className='col-md-8' value={email} disabled name="Email" id='email' placeholder='Enter email'/>}
+               {!isPending && !subscribed && <button className='col-md-4' id='subber'>Submit</button>}
+               {isPending && <button className='col-md-4' disabled>Submiting</button>}
+               {subscribed && <button className='col-md-4' disabled>subscribed</button>}
                </div>
             </form>
            </div>
@@ -54,6 +75,12 @@ const Footer = () => {
                color: "white"
             }
             }>Courses</Link></p>
+            <p><Link to="/contact"style={{
+               fontFamily: "serif",
+               textDecoration: "none",
+               color: "white"
+            }
+            }>Contact</Link></p>
            </div>
            </div>
            </div>

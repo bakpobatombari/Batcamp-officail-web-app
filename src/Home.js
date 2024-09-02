@@ -1,14 +1,16 @@
 
-import homepic from './assets/images/website.jpeg';
 import './assets/css/bootstrap.min.css';
-import aboutpic from './assets/images/pic.jpg'
+import aboutpic from './assets/images/newbatcamp.jpg'
 import cycle from './assets/images/alexandru-acea--WBYxmW4yuw-unsplash.jpg'
 import 'react-slideshow-image/dist/styles.css'
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
-import portif from './assets/images/about-prog.jpeg'
+import portif from './assets/images/newbatcamp.jpg'
 
 const Home = () => {
+    let i= 12;
+    let n =` I Am ${i} Years Old,`;
+
     const images = [
         "https://media.istockphoto.com/id/1489415049/photo/two-diverse-software-developers-having-a-meeting-in-a-conference-room-female-and-male-tech.webp?b=1&s=170667a&w=0&k=20&c=HIYlSIoHTy1diSvekZnL90pFiiq_2IPKah9MKv849A4=",
         "https://media.istockphoto.com/id/1431603444/photo/software-developer-at-the-office.webp?b=1&s=170667a&w=0&k=20&c=lC7GzT24P-4TXM5Bp9RmwV3Xzp5sxM8nls5RC6ptGTQ=",
@@ -81,7 +83,7 @@ const Home = () => {
                     borderRadius:"50%",
                     height:"340px",
                     border:"1px solid white"
-                    }} className="col-md-9" alt="Portifolio" />
+                    }} className="col-md-9 circle-p" alt="Portifolio" />
             </div>
             <div className="col-md-6">
                 <center>
@@ -96,7 +98,7 @@ const Home = () => {
                         fontSize: "24px",
                         fontFamily: "serif"
                     }
-                }>My Name Is Batombari Bakpo, I am 12 Years Old And I Am The Ceo & Founder Of Batcamp Global Services, I Started The Company In Order To Stop The Challenges in Learning And Creating Websites And Grapahics Designs</p>
+                }>My Name Is Batombari Bakpo,{n} And I Am The Ceo & Founder Of Batcamp Global Services, I Started The Company In Order To Stop The Challenges in Learning And Creating Websites And Graphics Designs</p>
             </div>
             </div>
         </div>

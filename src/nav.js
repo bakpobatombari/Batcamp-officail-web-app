@@ -1,40 +1,37 @@
-import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
 import logo from './assets/images/batcamp 2.0.png'
 
 const Navbar = () => {
-    const [navSize, setnavSize] = useState("10rem");
-    const [navColor, setnavColor] = useState("transparent");
-    const listenScrollEvent = () => {
-      window.scrollY > 10 ? setnavColor("#4ac99a63") : setnavColor("transparent");
-      window.scrollY > 10 ? setnavSize("4rem") : setnavSize("7rem");
-    };
-    useEffect(() => {
-      window.addEventListener("scroll", listenScrollEvent);
-      return () => {
-        window.removeEventListener("scroll", listenScrollEvent);
-      };
-    }, []);
-  
-    return ( 
+   return ( 
         <> 
-        <nav className="navbar position-fixed container-fluid"
-        style={{
-          backgroundColor: navColor,
-          height: navSize,
-          transition: "all 1s"
-        }}>
+        <nav className="navbar position-fixed container-fluid">
             <div className="logo">
                 <img src={logo} className='pic-logo' alt='Logo' />
             <h1>Batcamp Global Servcies</h1>
             </div>
+            <span className='openNav' onClick={()=>{
+              document.querySelector('.sidenav').className = 'sidenav width show';
+            }}>&#9776;</span>
             <div className="links">
                 <Link to="/" className='link'>Home</Link>
                 <Link to="/about" className='link'>About</Link>
                 <Link to="/Courses" className='link'>Courses</Link>
-                {/* <button className='col-md-4 log-but'><Link to='/login'>LOGIN</Link></button> */}
+                <Link to="/Contact" className='link'>Contact</Link> 
+    
             </div>
         </nav>
+        <div className="sidenav">
+          <span onClick={()=>{
+
+document.querySelector('.sidenav').classList = 'hide sidenav';
+          }}>&times;</span>
+          <div className="s-link">
+          <Link to='/'>Home</Link>
+          <Link to='/About'>About</Link>
+          <Link to='/Contact'>Contact</Link>
+           <Link to='/database'>DB</Link>
+        </div>
+        </div>
         </>
     );
 }
