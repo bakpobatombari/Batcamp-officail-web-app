@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch, } from 'react-router-dom';
 import Home from './Home';
 import Navbar from './nav';
 import About from './about';
-import Contact from './/contact';
+import ContactUs from './Rcontact';
 import Footer from './footer';
 import Courses from './courses';
 import NotFound from './404';
@@ -25,8 +25,8 @@ function App() {
           <Route path="/courses">
           <Courses />
           </Route>
-          <Route path="/contact">
-            <Contact/>
+          <Route path="/Rcontact">
+            <ContactUs/>
           </Route>
           <Route path='/database'>
             <MyBase/>

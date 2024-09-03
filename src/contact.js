@@ -23,7 +23,7 @@ const Contact = () => {
         else{
             alert("invalid Password ")
             document.querySelector('.db').className = 'd-b db none';
-            setPassword = ('');
+            setPassword('');
         }
     } ;
  
@@ -46,7 +46,7 @@ const Contact = () => {
         setIsPending(true);
         const data = {firstName,LastName,email,message}
         setTimeout(()=>{
-            fetch('https://bakpobatombari.github.io/batcampdb/db.json', {
+            fetch('http://localhost:8800/info', {
                 method: 'POST',
                 headers: {"Content-Type": "application/json"},
                 body: JSON.stringify(data)

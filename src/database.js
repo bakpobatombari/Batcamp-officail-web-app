@@ -3,7 +3,7 @@ import useFetch from "./useFetch";
 
 const MyBase = () => {
 
-    const {data: blogs,isPending,error} = useFetch('https://bakpobatombari.github.io/batcampdb/db.json');
+    const {data: blogs,isPending,error} = useFetch('http://localhost:8800/info');
 
     return (  
         <div className="home">

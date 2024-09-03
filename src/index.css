@@ -325,6 +325,7 @@ a::after{
   background: #f1356d;
   color: #fff;
   border: 0;
+  margin-bottom: 1rem;
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
@@ -375,4 +376,20 @@ a::after{
   100%{
     transform: translateY(0);
   }
+}
+.contact-us{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+.contact-us input{
+  display: block;
+  height:40px;
+}
+.contact-us textarea{
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }

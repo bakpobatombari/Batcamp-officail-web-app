@@ -4,10 +4,10 @@ import { useHistory } from "react-router-dom";
 
 const Detail = () => {
     const { id } = useParams();
-    const {data:info,error,isPending} = useFetch('https://bakpobatombari.github.io/batcampdb/db.json' + id);
+    const {data:info,error,isPending} = useFetch('http://localhost:8800/info/' + id);
     const history = useHistory();
     const handleDelete = () =>{
-        fetch('https://bakpobatombari.github.io/batcampdb/db.json' + info.id, {
+        fetch('http://localhost:8800/info/' + info.id, {
             method: 'DELETE',
         }).then(() => {
             history.push('/database');
@@ -23,7 +23,11 @@ const Detail = () => {
                     <p>Lastname: {info.LastName}</p>
                     <p>Email: {info.email}</p>
                     <p>Message: <br /> {info.message}</p>
-                    <button onClick={handleDelete}>delete</button>
+                    <button onClick={handleDelete}>Replied</button>
+                    <br/>
+                    <button onClick={()=>{
+                        history.push('/database')
+                    }}>Back</button>
                 </article>
             )}
         </div>
