@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 export default function ContactUs() {
     const [result, setResult] = useState("");
+    const history = useHistory();
   
     const onSubmit = async (event) => {
       event.preventDefault();
@@ -19,6 +21,7 @@ export default function ContactUs() {
       if (data.success) {
         setResult("Form Submitted Successfully");
         event.target.reset();
+        history.push('/');
       } else {
         console.log("Error", data);
         setResult(data.message);
