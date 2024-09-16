@@ -36,7 +36,7 @@ const Footer = () => {
                   }>Enter Email for more info</p>}
                   {subscribed && <p>{email} has successfully subscibed To Batcamp</p>}
                <div className="row">
-               {!isPending && !subscribed &&<input type="email" className='col-md-8' name="Email" onChange={(e) => setEmail(e.target.value)} id='email' placeholder='Enter email'/>}
+               {!isPending && !subscribed &&<input type="email" className='col-md-8' name="Email" required onChange={(e) => setEmail(e.target.value)} id='email' placeholder='Enter email'/>}
                {!isPending && subscribed &&<input type="email" className='col-md-8' value={email} disabled name="Email" id='email' placeholder='Enter email'/>}
                {!isPending && !subscribed && <button className='col-md-4' id='subber'>Submit</button>}
                {isPending && <button className='col-md-4' disabled>Submiting</button>}
@@ -75,7 +75,7 @@ const Footer = () => {
                color: "white"
             }
             }>Courses</Link></p>
-            <p><Link to="/contact"style={{
+            <p><Link to="/RContact"style={{
                fontFamily: "serif",
                textDecoration: "none",
                color: "white"

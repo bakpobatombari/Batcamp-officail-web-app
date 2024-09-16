@@ -21,9 +21,9 @@ const Contact = () => {
             history.push('/database')
         }
         else{
-            alert("invalid Password ")
-            document.querySelector('.db').className = 'd-b db none';
-            setPassword('');
+            let invalid = document.getElementById("invalid");
+            invalid.type = "text";
+            setPassword('Incorrect password');
         }
     } ;
  
@@ -99,7 +99,7 @@ const Contact = () => {
                 <label htmlFor="">Message:</label>
                 <textarea 
                 value={message}
-                onChange={(e)=> setMessage(e.target.value)}></textarea>
+                onChange={(e)=> setMessage(e.target.value)} required></textarea>
                 <center>
                 {!isPending && <button className="col-md-4 btn btn-primary" onDoubleClick={()=>{
                         const btn = document.querySelector('.db-btn');
@@ -112,7 +112,7 @@ const Contact = () => {
             <div className="db container none col-md-4">
                 <form onSubmit={openDb}>
                     <span className="btn btn-primary" onClick={closeBtn} style={{height:'30px', marginTop:'20px'}}>&times;</span>
-                    <input type="password" value={password} onChange={(e)=> setPassword(e.target.value)} required/>
+                    <input type="password" id="invalid" value={password} onChange={(e)=> setPassword(e.target.value)} required/>
                     <button>enter</button>
                 </form>
             </div>

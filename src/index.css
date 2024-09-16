@@ -148,8 +148,7 @@ a::after{
   overflow: hidden;
   background: rgba(68, 134, 94, 0.534);
   z-index: 10;
-  width: 50%;
-  position: fixed;
+  width: 0;
   top:0;
   transition: 1s;
   right: 0;
@@ -292,9 +291,7 @@ a::after{
 .openNav{
   display: none;
 }
-.sidenav{
-  display: none;
-}
+
 .about-me{
   height:fit-content;
   background: #5c9e8e93;
@@ -314,10 +311,9 @@ a::after{
   display: block;
   font-size: 30px;
  }
- .sidenav{
-  display: none;
- }
- .db-btn{
+
+ .contact-us input{width: 100%;}
+ db-btn{
   display: block !important;
  }
 }
@@ -387,9 +383,12 @@ a::after{
 }
 .contact-us input{
   display: block;
-  height:40px;
+  height:30px;
+  border-radius: 5px;
+  border: 1px solid #c5c5c5d5;
+  width: 400px;
 }
 .contact-us textarea{
-  border: 1px solid #ccc;
+  border: 1px solid #bebebea1;
   border-radius: 5px;
 }

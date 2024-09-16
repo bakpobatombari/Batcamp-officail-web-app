@@ -16,7 +16,7 @@ const Navbar = () => {
                 <Link to="/" className='link'>Home</Link>
                 <Link to="/about" className='link'>About</Link>
                 <Link to="/Courses" className='link'>Courses</Link>
-                <Link to="/Rcontact" className='link'>Contact</Link> 
+                <Link to="/RContact" className='link'>Contact</Link> 
     
             </div>
         </nav>
@@ -29,7 +29,7 @@ document.querySelector('.sidenav').classList = 'hide sidenav';
           <Link to='/'>Home</Link>
           <Link to='/About'>About</Link>
           <Link to='/Rcontact'>Contact</Link>
-           <Link to='/database'>DB</Link>
+           <Link to='/database'>Courses</Link>
         </div>
         </div>
         </>

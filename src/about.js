@@ -2,6 +2,7 @@ import 'react-slideshow-image/dist/styles.css'
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import aboutpic from './assets/images/newbatcamp.jpg'
+import { useState } from 'react';
 
 const About = () => {
     const images = [
@@ -10,9 +11,12 @@ const About = () => {
         "https://media.istockphoto.com/id/1431603444/photo/software-developer-at-the-office.webp?b=1&s=170667a&w=0&k=20&c=lC7GzT24P-4TXM5Bp9RmwV3Xzp5sxM8nls5RC6ptGTQ=",
         "https://media.istockphoto.com/id/1450788989/photo/portrait-of-happy-african-businesswoman-holding-digital-tablet-in-the-office.webp?b=1&s=170667a&w=0&k=20&c=zkLn4o1T0CMCXmTQZlwheJDYuW9fOXXkvTJ9zbl3sCs=",
     ];
+    const [isPending, setIsPending] = useState(true);
     const age = "12 Years Old";
+    setTimeout(()=>{setIsPending(false)},1000)
     return ( 
-        <>
+        <div>
+        {!isPending && <div>
         <div className="slideshow mb-4">
         <Slide>
             <div className="each-slide-effect">
@@ -65,7 +69,9 @@ const About = () => {
                 </div>
             </div>
         </div>
-        </>
+        </div>}
+        {isPending && <div className='mt-4 text-center'>Loading...</div>}
+        </div>
      );
 }
  

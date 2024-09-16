@@ -6,7 +6,6 @@ import 'react-slideshow-image/dist/styles.css'
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import portif from './assets/images/newbatcamp.jpg'
-
 const Home = () => {
     let i= 12;
     let n =` I Am ${i} Years Old,`;
@@ -56,15 +55,17 @@ const Home = () => {
         </div>
         <div className="offers container-fluid">
         <div className="container">
-        <center>
-            <h2>What We Offer</h2>
-            <div className="hr-line col-md-3"></div>
-            </center>
             <div className="row">
             <div className="offer-pic col-md-6">
                 <img src={cycle} className="cycle col-md-9" alt="development cycle" />
             </div>
             <div className="offer-deals col-md-6">
+            <center>
+                <marquee behavior="" direction="right">
+            <h2>What We Offer</h2>
+            <div className="hr-line col-md-3"></div>
+            </marquee>
+            </center>
                 <ul>
                     <li>Web Development Courses</li>
                     <li>Graphics Design Courses</li>
