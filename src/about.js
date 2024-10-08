@@ -3,7 +3,7 @@ import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import aboutpic from './assets/images/newbatcamp.jpg'
 import { useState } from 'react';
-
+import cycle from './assets/images/main-cycle.jpeg'
 const About = () => {
     const images = [
 
@@ -67,6 +67,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
         </div>}

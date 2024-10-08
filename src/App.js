@@ -9,6 +9,7 @@ import Courses from './courses';
 import NotFound from './404';
 import MyBase from './database';
 import Detail from './db';
+import Leadership from './leadership';
 import { useState } from 'react';
 function App() {
   const [isPending, setIsPending] = useState(true);
@@ -39,6 +40,9 @@ function App() {
           </Route>
           <Route path='/info/:id'>
             <Detail/>
+          </Route>
+          <Route path="/leadership">
+            <Leadership/>
           </Route>
           <Route path="*">
           <NotFound />

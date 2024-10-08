@@ -1,5 +1,8 @@
 import { Slide } from "react-slideshow-image";
 import course from './assets/images/programmer.jpeg'
+import html from './assets/images/html-removebg-preview (1).png'
+import css from './assets/images/download (2).jpeg';
+import js from './assets/images/js.png';
 import { useState } from "react";
 const Contact = () => {
     const images = [
@@ -34,20 +37,20 @@ const Contact = () => {
                 <div className="row">
                 <div className="col-md-2">
                     <div className="card">
-                        <img src={course} className="col-md-12" alt="" />
+                        <img src={html} className="col-md-12" alt="" />
                     <p>HTML Courses</p>
                     </div>
                 </div>
 
                 <div className="col-md-2">
                     <div className="col-md-12 card">
-                    <img src={course} className="col-md-12" alt="" />
+                    <img src={css} className="col-md-12" alt="" />
                     <p>Css Courses</p>
                     </div>
                 </div>
                 <div className="col-md-2">
                     <div className="col-md-12 card">
-                    <img src={course} className="col-md-12" alt="" />
+                    <img src={js} className="col-md-12" alt="" />
                     <p>Javascript Courses</p>
                     </div>
                 </div>

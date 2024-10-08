@@ -392,3 +392,39 @@ a::after{
   border: 1px solid #bebebea1;
   border-radius: 5px;
 }
+.member{
+  height: 300px;
+  width: 20%;
+  animation: rotate 5s 1;
+}
+.member:nth-child(2){
+  animation-delay: 0.5s;
+}
+.member:nth-child(3){
+  animation-delay: 1s;
+}
+@keyframes rotate{
+  from{
+    transform: translate(-20px) rotate(-20deg);
+  }
+  to{
+    transform: translate(0);
+  }
+}
+.member .pic img{
+  height: 200px;
+  border: 2px solid rgb(77, 97, 77);
+  border-radius: 50%;
+}
+@media screen and (min-width:1200px) and (max-width:1720px) {
+.batom{
+  margin:auto;
+} 
+.others{
+  margin-left: 20%;
+  margin-right: 5%;
+}
+.info p:first-child{
+  font-size: 19px;
+}
+}
