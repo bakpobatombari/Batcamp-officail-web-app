@@ -7,7 +7,7 @@ const Navbar = () => {
         <nav className="navbar position-fixed container-fluid">
             <div className="logo">
                 <img src={logo} className='pic-logo' alt='Logo' />
-            <h1>Batcamp Global Servcies</h1>
+            <h1 style={{marginLeft:'-4px',fontSize:'16px'}}>Batcamp Global Servcies</h1>
             </div>
             <span className='openNav' onClick={()=>{
               document.querySelector('.sidenav').className = 'sidenav width show';
@@ -30,7 +30,7 @@ document.querySelector('.sidenav').classList = 'hide sidenav';
           <Link to='/'>Home</Link>
           <Link to='/About'>About</Link>
           <Link to='/Rcontact'>Contact</Link>
-           <Link to='/database'>Courses</Link>
+           <Link to='/courses'>Courses</Link>
         </div>
         </div>
         </>
